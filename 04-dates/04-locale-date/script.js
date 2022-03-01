@@ -4,8 +4,11 @@
 
 (() => {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
-    // your code here
-
+    let date = new Date()
+    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    let dateResult = date.toLocaleDateString("en-GB", options);
+    let hours = date.getHours();
+    let mins = date.getMinutes();
+    
+    document.getElementById("target").innerHTML = dateResult + ", " + hours + "h" + mins;
 })();

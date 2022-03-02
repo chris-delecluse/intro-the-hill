@@ -4,5 +4,19 @@
 (() => {
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
-    // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+        let myArr = [];
+        let finalArr;
+        let temp;
+    
+        for (let i = 0; i < keys.length; i++) {
+            temp = [keys[i], values[i]];
+    
+            myArr.push(temp);
+        }
+        finalArr = Object.fromEntries(myArr);
+
+        console.log(finalArr);
+    })
 })();

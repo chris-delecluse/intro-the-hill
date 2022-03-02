@@ -2,13 +2,14 @@
 
 
 (() => {
-    const people = {
-        lastName : "Chris",
-        firstName : "Delecluse",
-        age : 32,
-        city : "Tournai",
-        country : "Belgium"
-    }
-
-    console.log(people);
+    document.getElementById("run").addEventListener("click", () => {
+        const people = {
+            lastName : "Chris",
+            firstName : "Delecluse",
+            age : 32,
+            city : "Tournai",
+            country : "Belgium"
+        }
+        console.log(people);
+    })
 })();

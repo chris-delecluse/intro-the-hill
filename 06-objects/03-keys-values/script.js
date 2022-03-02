@@ -10,5 +10,11 @@
         city: "Liège",
         status: "married",
     };
-    // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+        console.log("Keys : \n-----------------\n");
+        console.log(Object.keys(person));
+        console.log("Values : \n-----------------\n");
+        console.log(Object.values(person));
+    });
 })();

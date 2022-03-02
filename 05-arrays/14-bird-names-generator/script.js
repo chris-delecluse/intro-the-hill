@@ -29,6 +29,19 @@
         "tangent",
         "arboré",
     ]);
-
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        
+    });
+    
+    document.getElementById("run").addEventListener("click",() => {
+        myArr = [...adjectives];
+        let i = Math.floor(Math.random() * birds.length)
+        let j = Math.floor(Math.random() * adjectives.size)
+    
+        if (birds[i].fem === true) {
+            console.log(birds[i].name + " " + myArr[j] + "e");
+        } else {
+            console.log(birds[i].name + " " + myArr[j]);
+        }
+    });
 })();

@@ -18,6 +18,6 @@
         "cerise",
     ];
 
-    // your code here
+    fruits.forEach(el => console.log(el));
 
 })();

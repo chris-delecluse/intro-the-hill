@@ -80,6 +80,17 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let arrayCpy = [...people];
+        
+        people.forEach(el => {
+            if(el.age < 18) {
+                arrayCpy.splice(arrayCpy.indexOf(el), 1);
+            }
+        });
+        console.log(people);
+        console.log("\n");
+        console.log(arrayCpy);
+    });
 
 })();

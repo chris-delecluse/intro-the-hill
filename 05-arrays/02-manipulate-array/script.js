@@ -14,7 +14,14 @@
         "raisin",
         "cerise",
     ];
-
-    // your code here
+    
+    document.getElementById("run").addEventListener("click", () => {
+        fruits.shift(); // remove from start
+        fruits.pop(); // remove from end
+        fruits.unshift("banana") // add to the beginning
+        fruits.push("kiwi") // add at the end
+        
+        alert(fruits);
+    });
 
 })();

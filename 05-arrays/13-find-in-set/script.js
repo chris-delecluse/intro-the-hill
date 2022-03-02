@@ -14,5 +14,8 @@
         "Lucas",
     ]);
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        console.log(people.size + " is the size of the set people.");
+        console.log("Alexandre inside the set ? : " + people.has("Alexandre"));
+    });
 })();

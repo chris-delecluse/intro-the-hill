@@ -18,6 +18,8 @@
         "cherry",
     ];
 
-    fruits.forEach(el => console.log(el));
+    for (let i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+    }
 
 })();

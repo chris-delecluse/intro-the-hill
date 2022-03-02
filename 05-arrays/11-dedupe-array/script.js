@@ -19,7 +19,12 @@
         "raisin",
         "cerise",
     ];
-
-    // your code here
-
+    document.getElementById("run").addEventListener("click", () => {
+        let newFruits = new Set(fruits);
+        
+        console.log(fruits)
+        console.log("\n New array : \n\n");
+        console.log(newFruits);
+    })
+    
 })();

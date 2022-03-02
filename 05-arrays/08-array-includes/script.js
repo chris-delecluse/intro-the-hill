@@ -17,6 +17,21 @@
         "cherry",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let bool = false;
+    
+        fruits.forEach(el => {
+            if (el === "apple") {
+                bool = true;
+            }
+        });
+    
+        if (bool === true) {
+            console.log("There is an apple in the array fruits !");
+        } else {
+            console.log("No apple in the array fruits :(");
+        }
+    });
+
 
 })();

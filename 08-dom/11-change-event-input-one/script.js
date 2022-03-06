@@ -3,7 +3,15 @@
 
 (() => {
 
-    let input = document.getElementById("pass-one");
-    let inputCounter = document.getElementById("counter");
+    const input = document.getElementById("pass-one");
+    const counter = document.getElementById("counter");
     
+    input.setAttribute("maxlength", 10);
+
+    input.addEventListener("input", (e) => {
+        let currLength = e.target.value.length;
+
+        counter.innerHTML = currLength + "/10";
+    });
+
 })();

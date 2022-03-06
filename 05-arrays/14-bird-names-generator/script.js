@@ -29,9 +29,7 @@
         "tangent",
         "arboré",
     ]);
-    document.getElementById("run").addEventListener("click", () => {
-        
-    });
+
     
     document.getElementById("run").addEventListener("click",() => {
         myArr = [...adjectives];
@@ -39,9 +37,9 @@
         let j = Math.floor(Math.random() * adjectives.size)
     
         if (birds[i].fem === true) {
-            console.log(birds[i].name + " " + myArr[j] + "e");
+            document.getElementById("target"). innerHTML = birds[i].name + " " + myArr[j] + "e";
         } else {
-            console.log(birds[i].name + " " + myArr[j]);
+            document.getElementById("target"). innerHTML = birds[i].name + " " + myArr[j];
         }
     });
 })();

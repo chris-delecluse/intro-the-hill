@@ -33,7 +33,7 @@
                 }
             }
             
-            console.log(computers[computers.indexOf(el)]);
         })
+        console.log(computers);
     });  
 })();

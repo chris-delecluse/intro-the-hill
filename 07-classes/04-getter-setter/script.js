@@ -2,5 +2,34 @@
 
 
 (() => {
-    // your code here
+
+    class Person {
+        constructor(firstname, lastname) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+
+        getter() {
+            return this.firstname + ' ' + this.lastname;
+        }
+
+        setter() {
+            return this.getter().split(' ');
+        }
+
+    }
+
+    document.getElementById("run").addEventListener("click", () => {
+        let ppl = new Person("Chuck", "Norris");
+
+        console.log(ppl.getter());
+
+        ppl.firstname = "Harry";
+        ppl.lastname = "Potter"
+    
+        console.log(ppl.getter());
+    })
+
+
+
 })();

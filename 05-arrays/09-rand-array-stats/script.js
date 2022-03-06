@@ -31,6 +31,4 @@
         document.getElementById("sum").innerHTML = sumOfallNumbesrArray(randomNumberArray)
         document.getElementById("average").innerHTML = averageOfAllNumbesrarray(randomNumberArray);
     });
-
-        
 })();

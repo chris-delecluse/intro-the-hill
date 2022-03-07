@@ -3,6 +3,17 @@
 
 (() => {
 
-    // your code here
+    const target = document.getElementById("target");
+    const button = document.getElementById("increment");
+    
+    let myLocalStorage = localStorage;
+    let i = myLocalStorage.getItem('counter');
 
+    target.innerHTML = i;
+
+    button.addEventListener("click", () => {
+        i++;
+        target.innerHTML = i;
+        myLocalStorage.setItem('counter', `${i}`);
+    })
 })();

@@ -2,7 +2,16 @@
 
 
 (() => {
+    function loop () {
+        target.innerHTML += phrase.charAt(i)
+        i++
+        setTimeout(loop, 50);
+    }
 
-    // your code here
+    const target = document.getElementById("target");
+    let phrase = target.innerHTML;
+    let i = 0;
+    target.innerHTML = "";
 
+    loop();    
 })();

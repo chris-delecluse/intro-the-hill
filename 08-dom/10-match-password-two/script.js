@@ -12,5 +12,4 @@
             passTwo.classList.add("error")
         }
     });
-    
 })();
